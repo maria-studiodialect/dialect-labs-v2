@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        monument: ['Monument', 'sans-serif'], 
+        monumentGrotesk: ['Monument-Grotesk', 'sans-serif'], 
+        prophet: ['Prophet', 'sans-serif']
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
