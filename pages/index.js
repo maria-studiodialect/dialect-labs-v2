@@ -10,10 +10,10 @@ import Logo from "./components/Logo";
 import Stairs from "./components/Layout/Stairs";
 
 const Demos = [
-  { name: 'Port', name2: 'als', img: '/thumbnails/portals.jpg', img2: '/thumbnails/portals2.jpg', img3:'/thumbnails/portals3.jpg', link: '/portals', info: 'Sed vitae lacus non sem eleifend commodo.' },
   { name: 'Ro', name2: 'cks', img: '/thumbnails/rocks.jpg',img2: '/thumbnails/rocks2.jpg', img3:'/thumbnails/rocks3.jpg' , link: '/rocks', info: 'Suspendisse at sem at metus.'},
   { name: 'Chame', name2: 'leon', img: '/thumbnails/cham.jpg', img2: '/thumbnails/cham2.jpg', img3:'/thumbnails/cham3.jpg' , link: '/glass', info: 'lacus sit amet urna sagittis.' },
   { name: 'Scroll ', name2: ' Portals', img: '/thumbnails/scroll1.jpg', img2: '/thumbnails/scroll2.jpg', img3:'/thumbnails/scroll3.jpg' , link: '/portalsScroll', info: 'lacus sit amet urna.' },
+  { name: 'Port', name2: 'als', img: '/thumbnails/portals.jpg', img2: '/thumbnails/portals2.jpg', img3:'/thumbnails/portals3.jpg', link: '/portals', info: 'Sed vitae lacus non sem eleifend commodo.' },
   { name: 'Face ', name2: ' Controls', img: '/thumbnails/cham.jpg', img2: '/thumbnails/cham2.jpg', img3:'/thumbnails/cham3.jpg' , link: 'https://xn3z2w.csb.app/ ', info: 'Sed auctor tempor congue mauris.' },
 ]
 

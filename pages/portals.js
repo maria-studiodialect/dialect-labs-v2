@@ -7,6 +7,7 @@ import { useRoute, useLocation } from 'wouter'
 import { easing, geometry } from 'maath'
 import Inner from './components/Layout/Inner'
 import Logo from './components/Logo'
+import Stairs from './components/Layout/Stairs'
 
 extend(geometry)
 
@@ -17,7 +18,7 @@ export default function Portals() {
     useGLTF.preload('nike-portal.glb');
 
     return (
-    <Inner>
+    <Stairs>
     <Logo/>
     <Canvas camera={{ fov: 75, position: [0, 0, 20] }}>
         <color attach="background" args={['#f0f0f0']} />
@@ -42,7 +43,7 @@ export default function Portals() {
         </Frame>
         <Rig /> 
     </Canvas>
-    </Inner>
+    </Stairs>
     );
 }
 
