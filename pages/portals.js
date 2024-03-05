@@ -22,10 +22,10 @@ export default function Portals() {
     <Canvas camera={{ fov: 75, position: [0, 0, 20] }}>
         <color attach="background" args={['#f0f0f0']} />
         {/* Row 1 */}
-        <Frame id="01" name={`pick\nles`} author="Joe Albin-Clark" bg="#E7000C" position={[-1.2, 0.7, 0]} rotation={[0, 0.5, 0]}>
+        <Frame id="01" name='tat' author="Joe Albin-Clark" bg="#E7000C" position={[-1.2, 0, 0]} rotation={[0, 0.5, 0]}>
             <Gltf src="coke-portal-low.glb" position={[0, 0, -10]} />
         </Frame>
-        <Frame id="02" name="tea" author="Joe Albin-Clark" bg="#D3ECFF" position={[0, 0.7, 0]}>
+        <Frame id="02" name="hoka" author="Joe Albin-Clark" bg="#D3ECFF" position={[0, 0, 0]}>
         <Gltf src="hoka23-portal.glb" receiveShadow castShadow position={[0, -2, -4]} />
         <directionalLight position={[0, 5, -4]} intensity={4} />
         <directionalLight position={[0, -15, -0]} intensity={4} color="#D3ECFF" />
@@ -34,29 +34,12 @@ export default function Portals() {
 
         </Frame>
     
-        <Frame id="03" name="still" author="Omar Faruq Tawsif" bg="#d1d1ca" position={[1.2, 0.7, 0]} rotation={[0, -0.5, 0]}>
+        <Frame id="03" name="nike" author="Joe Albin-Clark" bg="#d1d1ca" position={[1.2, 0, 0]} rotation={[0, -0.5, 0]}>
             <Gltf src="nike-portal.glb" receiveShadow castShadow  scale={0.4} position={[0, -0.4, -4]}  />
             <Environment files="/adamsbridge.hdr"  />
             <directionalLight position={[0, 5, -4]} intensity={4} />
             <ambientLight intensity={0.5} color="#FFFFFF" />
-
         </Frame>
-
-        {/* Row 2 */}
-        <Frame id="04" name={`pick\nles`} author="Omar Faruq Tawsif" bg="#e4cdac" position={[-1.2, -0.5, 0]} rotation={[0, 0.5, 0]}>
-        <Gltf src="pickles_3d_version_of_hyuna_lees_illustration-transformed.glb" scale={8} position={[0, -0.7, -2]} />
-
-        </Frame>
-        <Frame id="05" name="tea" author="Omar Faruq Tawsif" bg="#ffffff" position={[0, -0.5, 0]}>
-        <Gltf src="fiesta_tea-transformed.glb" position={[0, -3, -4]} rotation={[0, 0, 0]} />
-
-
-        </Frame>
-        <Frame id="06" name="still" author="Omar Faruq Tawsif" bg="#d1d1ca" position={[1.2, -0.5, 0]} rotation={[0, -0.5, 0]}>
-        <Gltf src="still_life_based_on_heathers_artwork-transformed.glb" scale={1.4} position={[2, -2, -4]} rotation={[0, 0.12, 0]}  />
-        
-        </Frame>
-        
         <Rig /> 
     </Canvas>
     </Inner>
@@ -86,7 +69,7 @@ function BackArrow() {
     );
 }
 
-function Frame({ id, name, author, bg, width = 1, height = 1, children, ...props }) {
+function Frame({ id, name, author, bg, width = 1, height = 2, children, ...props }) {
     const portal = useRef()
     const [, setLocation] = useLocation()
     const [, params] = useRoute('/item/:id')
