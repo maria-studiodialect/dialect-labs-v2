@@ -78,7 +78,7 @@ export default function Rocks() {
     return (
         <Stairs>
         <Logo color={isOn ? 'white' : 'black'}/>
-        <div className="fixed top-2 right-2 z-20 w-16">
+        <div className="fixed top-2 right-2 z-[18] w-16">
         <Switch isOn={isOn} setIsOn={setIsOn}/>
         </div>
         <Canvas

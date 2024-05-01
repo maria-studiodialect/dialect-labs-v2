@@ -7,6 +7,7 @@ import { useRoute, useLocation } from 'wouter'
 import { easing, geometry } from 'maath'
 import Inner from './components/Layout/Inner'
 import Logo from './components/Logo'
+import Stairs from './components/Layout/Stairs'
 
 extend(geometry)
 
@@ -143,7 +144,7 @@ function Images() {
 export default function PortalsScroll() {
     return (
         <>     
-        <Inner>
+        <Stairs>
         <Logo/>
         <div className='h-[100vh]'>
         <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
@@ -169,7 +170,7 @@ export default function PortalsScroll() {
         </Suspense>
         </Canvas>
         </div>
-        </Inner>
+        </Stairs>
         </>
     )
 }
