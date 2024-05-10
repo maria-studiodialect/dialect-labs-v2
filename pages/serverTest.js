@@ -10,7 +10,7 @@ export default function ServerTest() {
 
     useEffect(() => {
         // Initialize WebSocket connection
-        const rws = new ReconnectingWebSocket('ws://192.168.1.141:3001'); // Adjust URL to your WebSocket server
+        const rws = new ReconnectingWebSocket('wss://192.168.1.141:3001'); // Adjust URL to your WebSocket server
         setWs(rws);
 
         rws.onopen = () => {
