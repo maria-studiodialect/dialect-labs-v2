@@ -10,7 +10,7 @@ export default function ServerTest() {
 
     useEffect(() => {
         // Initialize WebSocket connection
-        const rws = new ReconnectingWebSocket('ws://192.168.1.141:8765'); // Adjust URL to your WebSocket server
+        const rws = new ReconnectingWebSocket('ws://192.168.1.141:3001'); // Adjust URL to your WebSocket server
         setWs(rws);
 
         rws.onopen = () => {
@@ -55,7 +55,7 @@ export default function ServerTest() {
                 },
                 "7": {
                 "inputs": {
-                    "text": "(worst quality, low quality:1.4)",
+                    "text": "(people, person, man, woman, human, hands, limbs, child:1.2, worst quality, low quality:1.4)",
                     "clip": [
                     "10",
                     0
@@ -121,7 +121,7 @@ export default function ServerTest() {
                     "seed": 1118921082858764,
                     "steps": 3,
                     "cfg": 1.6,
-                    "sampler_name": "dpmpp_2m",
+                    "sampler_name": "dpmpp_sde",
                     "scheduler": "karras",
                     "denoise": 0.58,
                     "model": [
@@ -188,8 +188,8 @@ export default function ServerTest() {
             }
 
         if (ws && ws.readyState === WebSocket.OPEN) {
-            ws.send(JSON.stringify(workflow));
-            console.log('Workflow sent');
+            ws.send(JSON.stringify(text));
+            console.log('Prompt sent' + text);
         } else {
             console.error('WebSocket is not connected.');
         }
